@@ -66,9 +66,9 @@ const loadForum = async (tag) => {
   currentForumPosts.forEach((item) => {
     const postElement = `
     <div
-        class="p-6 rounded-lg bg-[#F3F3F5] border border-[#F3F3F5] flex gap-5 hover:border-[#797DFC] hover:bg-[#797DFC1A] font-inter cursor-pointer forumPost"
+        class="p-6 rounded-lg bg-[#F3F3F5] border border-[#F3F3F5] flex flex-col sm:flex-row gap-5 hover:border-[#797DFC] hover:bg-[#797DFC1A] font-inter cursor-pointer forumPost"
     >
-        <div class="relative">
+        <div class="relative w-fit">
         <img
             src="${item["image"]}"
             alt="Post Image"
